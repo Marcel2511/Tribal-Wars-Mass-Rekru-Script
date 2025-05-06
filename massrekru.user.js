@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.9
 // @description  Initialrekrutierung, Truppen-Einfügen, dynamischer Threshold, konfigurierbarer Intervall, Auto-Refresh, Logs und Persistenz
-// @author       DeinName
+// @author       MarcelWollbaum
 // @match        https://*.die-staemme.de/game.php*screen=train&mode=mass*
 // @match        https://*.die-staemme.de/game.php*screen=train&mode=success&action=train_mass*
 // @grant        none
@@ -154,7 +154,6 @@
         statusEl.textContent = 'rekrutiert neu';
         doRecruit();
     }
-    // Status für keine Kapazität wurde entfernt, Skript macht in diesem Fall nichts weiter
     }
 
     // Neuladen planen
